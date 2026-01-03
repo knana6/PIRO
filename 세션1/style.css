@@ -1,0 +1,27 @@
+.responsive-container{
+    display: grid;
+    
+    background-color: black;
+    padding: 20px ;
+    grid-template-columns: repeat(3,minmax,1fr);
+    gap: 10px;
+}
+
+.responsive-item{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+@media(max-width:768px){
+    .responsive-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:480px){
+    .responsive-container{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,22 +1,23 @@
-
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
-# virtual environments
-.venv/
-venv/
-env/
-ENV/
-.ENV/
-.python-version
-
-# python cache
+# Python cache
 __pycache__/
+**/__pycache__/
 *.py[cod]
-*.pyo
-*.pyd
 
-# ide
+# venv
+venv/
+**/venv/
+.venv/
+**/.venv/
+
+# Django local DB
+db.sqlite3
+**/db.sqlite3
+*.sqlite3
+
+# Editor
 .vscode/
-.idea/
+**/.vscode/
+
+# Secrets
+.env
+.env.*
